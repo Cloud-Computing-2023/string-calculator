@@ -1,4 +1,4 @@
-FROM node:20.9.0-alpine
+FROM node:alpine:3.18
 RUN mkdir -p /calculator/app
 WORKDIR /calculator/app
 COPY package*.json ./
