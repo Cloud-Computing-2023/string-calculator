@@ -1,15 +1,14 @@
 {
   "name": "string-calculator",
   "version": "1.0.0",
-  "description": "",
+  "description": "First_Node_App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "author": "",
-  "license": "ISC"
+  "author": "viviana",
+  "license": "ISC",
+  "devDependencies":{
+    "jest":"^29.7.0"
+}
 }
