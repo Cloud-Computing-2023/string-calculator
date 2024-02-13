@@ -36,5 +36,7 @@ const server = http.createServer(function(request, response) {
 
 const port = 3000
 const host = '127.0.0.1'
-server.listen(port, host)
+//server.listen(port, host)
+// Because this is now going to run on ECS , ECS wil have its own pubic IP(always change) of its container.We need to remove host. If we know DNS, you can hardcode it as host here.
+server.listen(port)
 console.log(`Listening at http://${host}:${port}`)
