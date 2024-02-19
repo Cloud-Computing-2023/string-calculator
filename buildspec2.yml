@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    #If you use the Ubuntu standard image 2.0 or later, you must specify runtime-versions.
+    #If you specify runtime-versions and use an image other than Ubuntu standard image 2.0, the build fails.
+    runtime-versions:
+       nodejs: 16
+      # name: version
+    commands:
+       - echo Start of build testing!
+      # - command
+  pre_build:
+    commands:
+       - echo Installing source NPM dependencies...
+       - npm install
+  build:
+    commands:
+      - echo Test started on `date`
+      - echo Compiling the Node.js code
+      - npm run test
+  post_build:
+    commands:
+      - echo Test completed on `date`
+	  
